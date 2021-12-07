@@ -2,8 +2,6 @@
 
 Small script that will upload users data (email, name, patronymic, surname) from the sqlite database to one single [mailganer.com]([https://link](https://mailganer.com/)) list.
 
-<br>
-
 Every single script run will pick one unprocessed user record from the **data.sqlite** database file, send it to list, that is setted up in **config.yaml** file, and then set *processed* field of this record to 'Y' as indication of uploaded data.
 
 <br>
@@ -31,4 +29,5 @@ Also, you will need to provide **data.sqlite** file to the same directory as the
 |name2@mail.com|Имя |Отчество  |Фамилия|         |
 |...           |... |...       |...    |...      |
 |nameN@mail.com|Имя |Отчество  |Фамилия|         |
+
 Please note that field *processed* should be empty line '' for every user that are not uploaded to mailganer list yet.
